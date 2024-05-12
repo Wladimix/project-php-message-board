@@ -1,0 +1,668 @@
+@font-face {
+	font-family: "OpenSans";
+	src: url("./fonts/OpenSans.ttf");
+}
+
+body {
+	margin: 0px;
+	font-family: "OpenSans";
+}
+
+/* ===============================ШАПКА САЙТА=============================== */
+
+.header {
+	background-color: #313030cc;
+}
+
+.container {
+	margin: 0px 166px;
+}
+
+.header-line {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 15px 0px;
+}
+
+.header-nav-item {
+	color: #fff;
+	text-decoration: none;
+	font-weight: 700;
+	font-size: 14px;
+	margin-right: 25px;
+	transition: color 0.3s;
+}
+
+.header-nav-item:hover {
+	color: #ffc400;
+}
+
+.header-nav-item.active {
+	color: #ffc400;
+	text-decoration: none;
+	font-weight: 700;
+	font-size: 14px;
+	margin-right: 25px;
+	transition: color 0.3s;
+}
+
+.header-phone-holder {
+	display: flex;
+	align-items: center;
+}
+
+.header-phone-number-link {
+	color: #fff;
+	text-decoration: none;
+	font-weight: 700;
+	transition: color 0.3s;
+}
+
+.header-phone-number-link:hover {
+	color: #FF7400;
+}
+
+.header-phone-text {
+	font-size: 14px;
+	color: #fff;
+}
+
+.header-profile-buttons {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.header-profile-buttons::before {
+	content: '';
+	border-left: 2px solid #FF7400;
+	height: 80px;
+	width: 20px;
+}
+
+.header-profile-button-link {
+	background-color: #FF7400;
+	color: #fff;
+	border-radius: 10px;
+	text-decoration: none;
+	margin-right: 20px;
+	padding: 14px 18px;
+	font-weight: 700;
+	transition: background-color 0.2s;
+}
+
+.header-profile-button-link:hover {
+	background-color: #894b17;
+}
+
+.header-logout-button-link {
+	display: block;
+	border-radius: 10px;
+	width: 50px;
+	height: 50px;
+	transition: background-color 0.2s;
+}
+
+.header-logout-button-link:hover {
+	background-color: rgb(255, 255, 255, 0.7);
+}
+
+/* ===============================/ШАПКА САЙТА=============================== */
+
+
+
+/* ===============================ЗАГОЛОВОК ГЛАВНОЙ СТРАНИЦЫ=============================== */
+
+.page-title-home-block {
+	position: absolute;
+	background-color: #313030cc;
+	width: 100vw;
+	height: 100vh;
+	top: 0px;
+	z-index: -1;
+}
+
+.page-title-home-subblock {
+	width: 700px;
+	margin: auto;
+	padding-top: 200px;
+	text-align: center;
+}
+
+.page-title-home {
+	color: #FF7400;
+	font-size: 60px;
+	padding: 5px;
+}
+
+.page-subtitle-home {
+	position: relative;
+	color: #fff;
+	font-size: 25px;
+	padding-top: 5px;
+	padding-bottom: 30px;
+}
+
+.page-subtitle-home::before {
+	content: '';
+	position: absolute;
+	background-color: #fff;
+	width: 100px;
+	height: 2px;
+	top: 21px;
+	left: 86px;
+}
+
+.page-subtitle-home::after {
+	content: '';
+	position: absolute;
+	background-color: #fff;
+	width: 100px;
+	height: 2px;
+	top: 21px;
+	left: 513px;
+}
+
+.page-title-button-link {
+	background-color: #FF7400;
+	padding: 14px 28px;
+	color: #fff;
+	font-size: 14px;
+	font-weight: 700;
+	text-decoration: none;
+	transition: background-color 0.2s;
+}
+
+.page-title-button-link:hover {
+	background-color: #894b17;
+}
+
+/* ===============================/ЗАГОЛОВОК ГЛАВНОЙ СТРАНИЦЫ=============================== */
+
+
+
+/* ===============================ЗАГОЛОВОК СТРАНИЦЫ С ОБЪЯВЛЕНИЯМИ=============================== */
+
+.page-title-ads-block {
+	background-color: #313030cc;
+}
+
+.page-title-ads-sybblock {
+	width: 500px;
+	margin: auto;
+	text-align: center;
+}
+
+.page-title-ads {
+	color: #FF7400;
+	font-size: 70px;
+}
+
+/* ===============================/ЗАГОЛОВОК СТРАНИЦЫ С ОБЪЯВЛЕНИЯМИ=============================== */
+
+
+
+/* ===============================КОНТЕНТ СТРАНИЦЫ С ОБЪЯВЛЕНИЯМИ=============================== */
+
+.ads-filter-container {
+	position: relative;
+}
+
+.ads-filter-button {
+	position: absolute;
+	background-color: #ffc400;
+	color: #FF7400;
+	border-radius: 5px;
+	text-decoration: none;
+	padding: 4px 8px;
+	font-weight: 700;
+	top: -40px;
+	left: 20px;
+}
+
+.add-adv-button {
+	position: absolute;
+	background-color: green;
+	color: #fff;
+	border-radius: 5px;
+	text-decoration: none;
+	padding: 4px 8px;
+	font-weight: 700;
+	top: 10px;
+	left: 20px;
+}
+
+.advertisement-table {
+	position: relative;
+	margin: 30px auto;
+}
+
+.advertisement {
+	position: relative;
+	margin: 20px;
+	width: 370px;
+	height: 270px;
+	border-radius: 20px;
+	overflow: hidden;
+}
+
+.advertisement-content {
+	width: 370px;
+	height: 370px;
+	position: absolute;
+	transition: transform 0.2s;
+}
+
+.advertisement-content:hover {
+	transform: translate(0px, -70px);
+}
+
+.ads-content {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color: #FF7400;
+	color: #fff;
+	width: 370px;
+	height: 40px;
+	margin-top: 300px;
+	border-radius: 0px 0px 20px 20px;
+}
+
+.ads-name {
+	padding: 0px 10px;
+	font-size: 20px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.advertisement-image {
+	border-radius: 20px;
+	object-fit: cover;
+}
+
+/* ===============================/КОНТЕНТ СТРАНИЦЫ С ОБЪЯВЛЕНИЯМИ=============================== */
+
+
+
+/* ===============================КОНТЕНТ ДЕТАЛЬНОЙ СТРАНИЦЫ ОБЪЯВЛЕНИЯ=============================== */
+
+.detail-container {
+	margin: 20px auto;
+	width: 900px;
+}
+
+.load-file-message {
+	color: #ff0000;
+	font-weight: bold;
+}
+
+.detail-header {
+	display: flex;
+}
+
+.owner-information {
+	padding: 10px 30px;
+	font-size: 25px;
+}
+
+.detail-header h3 {
+	color: #FF7400;
+}
+
+.detail-header h3, .detail-header p {
+	margin: 0px;
+}
+
+.detail-header p:first-of-type {
+	margin-bottom: 100px;
+}
+
+.detail-img {
+	object-fit: cover;
+}
+
+.description {
+	color: #FF7400;
+	padding: 5px;
+	font-size: 30px;
+	text-align: justify;
+	word-wrap: break-word;
+}
+
+.edit-advertisement-button-link {
+	background-color: #FF7400;
+	color: #fff;
+	border-radius: 10px;
+	text-decoration: none;
+	padding: 14px 18px;
+	font-weight: 700;
+	transition: background-color 0.2s;
+}
+
+.edit-advertisement-button-link:hover {
+	background-color: #894b17;
+}
+
+.delete-advertisement-button-link {
+	background-color: #ff0000;
+	color: #fff;
+	border-radius: 10px;
+	text-decoration: none;
+	margin-left: 20px;
+	padding: 14px 18px;
+	font-weight: 700;
+	transition: background-color 0.2s;
+}
+
+.delete-advertisement-button-link:hover {
+	background-color: #880f0fc4;
+}
+
+.backurl-ads-button-link {
+	display: block;
+	text-decoration: none;
+	color: #ffc400;
+	font-weight: 700;
+	font-size: 18px;
+	margin: 50px 0px;
+}
+
+/* ===============================/КОНТЕНТ ДЕТАЛЬНОЙ СТРАНИЦЫ ОБЪЯВЛЕНИЯ=============================== */
+
+
+
+/* ===============================СТРАНИЦА РЕДАКТИРОВАНИЯ ОБЪЯВЛЕНИЯ=============================== */
+
+.advertisement-form {
+	margin: 50px 0px 15px 0px;
+	padding: 20px 0px;
+	border: 2px solid #656363;
+	border-radius: 20px;
+	display: flex;
+}
+
+/* ===============================/СТРАНИЦА РЕДАКТИРОВАНИЯ ОБЪЯВЛЕНИЯ=============================== */
+
+
+
+/* ===============================ЗАГОЛОВОК СТРАНИЦЫ "О НАС"=============================== */
+
+.page-title-about-block {
+	background-color: #313030cc;
+}
+
+.page-title-about-sybblock {
+	width: 500px;
+	margin: auto;
+	text-align: center;
+}
+
+.page-title-about {
+	color: #FF7400;
+	font-size: 100px;
+	padding: 5px;
+}
+
+.page-subtitle-about {
+	position: relative;
+	color: #fff;
+	font-size: 25px;
+	padding-top: 5px;
+	padding-bottom: 150px;
+}
+
+.page-subtitle-about::before {
+	content: '';
+	position: absolute;
+	background-color: #fff;
+	width: 100px;
+	height: 2px;
+	top: 21px;
+	left: -43px;
+}
+
+.page-subtitle-about::after {
+	content: '';
+	position: absolute;
+	background-color: #fff;
+	width: 100px;
+	height: 2px;
+	top: 21px;
+	left: 441px;
+}
+
+/* ===============================/ЗАГОЛОВОК СТРАНИЦЫ "О НАС"=============================== */
+
+
+
+/* ===============================КАРТОЧКИ НА СТРАНИЦЕ "О НАС"=============================== */
+
+.cards-holder {
+	display: flex;
+	justify-content: center;
+}
+
+.card {
+	box-shadow: 10px 10px 40px 20px #0000001A;
+	width: 349px;
+	margin-right: 31px;
+	background-color: #fff;
+	margin-top: -90px;
+	padding: 10px 10px;
+}
+
+.card-image {
+	display: flex;
+	justify-content: center;
+	padding-top: 4px;
+}
+
+.card-title {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 20px;
+	font-size: 24px;
+}
+
+.card-title span {
+	color: #ffc400;
+}
+
+.card-desc {
+	text-align: center;
+	font-size: 18px;
+	color: #656363;
+}
+
+/* ===============================/КАРТОЧКИ НА СТРАНИЦЕ "О НАС"=============================== */
+
+
+
+/* ===============================КОНТЕНТ НА СТРАНИЦЕ "О НАС"=============================== */
+
+.history {
+	margin: 166px 0px;
+}
+
+.history-holder {
+	display: flex;
+	width: 1200px;
+	margin: auto;
+}
+
+.history-info {
+	width: 444px;
+}
+
+.history-title {
+	font-size: 54px;
+	text-align: center;
+	margin-top: 21px;
+}
+
+.history-title span {
+	color: #ffc400;
+}
+
+.history-desc {
+	color: #656363;
+	font-size: 16px;
+	text-align: center;
+}
+
+.history-number {
+	display: flex;
+	justify-content: center;
+}
+
+.history-number-item {
+	margin: 20px;
+	text-align: center;
+	font-size: 30px;
+	color: #ffc400;
+}
+
+.history-number-item span {
+	display: block;
+	color: #000;
+}
+
+.history-images {
+	position: relative;
+}
+
+.history-image-1 {
+	position: absolute;
+	z-index: 1;
+	top: 56px;
+	left: 102px;
+}
+
+.history-image-2 {
+	position: absolute;
+	z-index: 2;
+	top: 1px;
+	left: 304px;
+}
+
+.history-image-3 {
+	position: absolute;
+	z-index: 3;
+	top: -74px;
+	left: 468px;
+}
+
+/* ===============================/КОНТЕНТ НА СТРАНИЦЕ "О НАС"=============================== */
+
+
+
+/* ===============================КОНТЕНТ НА СТРАНИЦЕ "ОТЗЫВЫ"=============================== */
+
+.coment {
+	margin: 30px 0px;
+	background-color: #E5E5E5;
+	padding-top: 104px;
+	padding-bottom: 139px;
+}
+
+.coment-text {
+	text-align: center;
+	margin-bottom: 20px;
+	font-size: 20px;
+}
+
+.coment-image {
+	text-align: center;
+}
+
+.coment-img {
+	border-radius: 150px;
+	object-fit: cover;
+}
+
+.coment-name {
+	padding-top: 9px;
+	font-size: 20px;
+	text-align: center;
+}
+
+/* ===============================/КОНТЕНТ НА СТРАНИЦЕ "ОТЗЫВЫ"=============================== */
+
+
+
+/* ===============================СТРАНИЦЫ АВТОРИЗАЦИИ=============================== */
+
+.authorization-form {
+	margin: 50px 0px 15px 0px;
+	padding: 20px 0px;
+	border-radius: 20px;
+	display: flex;
+	background-color: #656363;
+}
+
+.authorization-form-button-link {
+	display: block;
+	text-decoration: none;
+	color: #ffc400;
+	font-weight: 700;
+	font-size: 18px;
+	margin-bottom: 50px;
+}
+
+.logged-successfully-message {
+	margin-top: 40px;
+	font-size: 20px;
+}
+
+/* ===============================/СТРАНИЦЫ АВТОРИЗАЦИИ=============================== */
+
+
+
+/* ===============================ФОРМА ЗАПОЛНЕНИЯ=============================== */
+
+form {
+	margin-left: 30px;
+}
+
+label {
+	font-size: 30px;
+	color: #ffc400;
+}
+
+input {
+	padding: 3px 15px;
+	font-size: 30px;
+	border-radius: 10px;
+}
+
+input[type$="submit"] {
+	margin-top: 20px;
+	background-color: #FF7400;
+	border: none;
+	padding: 10px;
+	color: #fff;
+	transition: background-color 0.2s;
+}
+
+input[type$="submit"]:hover {
+	background-color: #894b17;
+}
+
+.input-errors {
+	color: #FF7400;
+	margin-left: 50px;
+	font-size: 30px;
+}
+
+textarea {
+	padding: 3px 15px;
+	font-size: 30px;
+	border-radius: 10px;
+	width: 700px;
+	height: 400px;
+}
+
+/* ===============================/ФОРМА ЗАПОЛНЕНИЯ=============================== */
